@@ -6,11 +6,15 @@
 /****************** Include Files ********************/
 #include "xil_types.h"
 #include "xstatus.h"
+#include "xparameters.h"
 
 #define PWM_DETECTION_S00_AXI_SLV_REG0_OFFSET 0
 #define PWM_DETECTION_S00_AXI_SLV_REG1_OFFSET 4
 #define PWM_DETECTION_S00_AXI_SLV_REG2_OFFSET 8
 #define PWM_DETECTION_S00_AXI_SLV_REG3_OFFSET 12
+
+#define PWM_DET_HCOUNT_REG PWM_DETECTION_S00_AXI_SLV_REG0_OFFSET
+#define PWM_DET_LCOUNT_REG PWM_DETECTION_S00_AXI_SLV_REG1_OFFSET
 
 
 /**************************** Type Definitions *****************************/
@@ -75,5 +79,8 @@
  *
  */
 XStatus PWM_DETECTION_Reg_SelfTest(void * baseaddr_p);
+uint32t _PWMdet_rd_hcount PWMdet_rd_hcount(void);
+uint32t _PWMdet_rd_lcount PWMdet_rd_hcount(void);
+
 
 #endif // PWM_DETECTION_H
