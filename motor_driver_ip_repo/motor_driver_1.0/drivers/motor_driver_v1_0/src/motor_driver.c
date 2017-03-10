@@ -123,7 +123,7 @@ enum _MOTOR_DRIVER_dir motor_driver_setPWM_setDir(uint32_t high_set_point, enum 
 * @note		The Base Address of the NEXYS4IO peripheral will be in xparameters.h
 *
 *****************************************************************************/
-void _MOTOR_DRIVER_dir motor_driver_setPWM(uint32_t high_set_point) {
+void  motor_driver_setPWM(uint32_t high_set_point) {
 
 
 	//set the speed of the motor

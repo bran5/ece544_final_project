@@ -90,6 +90,6 @@ XStatus MOTOR_DRIVER_Reg_SelfTest(void * baseaddr_p);
 enum _MOTOR_DRIVER_dir motor_driver_setPWM_setDir(uint32_t high_set_point, enum _MOTOR_DRIVER_dir direction, enum _MOTOR_DRIVER_dir old_dir );
 uint32_t motor_driver_readEnc(void);
 uint32_t motor_driver_readEnc_cnt_rdy(void);
-void _MOTOR_DRIVER_dir motor_driver_setPWM(uint32_t high_set_point);
+void motor_driver_setPWM(uint32_t high_set_point);
 
 #endif // MOTOR_DRIVER_H
