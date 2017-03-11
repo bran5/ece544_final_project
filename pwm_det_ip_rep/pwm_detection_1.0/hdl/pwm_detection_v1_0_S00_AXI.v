@@ -15,8 +15,8 @@
 	)
 	(
 		// Users to add ports here
-        input wire count_high_pwm,
-        input wire count_low_pwm,
+        input [31:0] count_high_pwm,
+        input [31:0] count_low_pwm,
         // input wire hready_intr,
         // input wire lready_intr,
         

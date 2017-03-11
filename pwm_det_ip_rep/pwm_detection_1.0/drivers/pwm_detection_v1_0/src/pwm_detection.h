@@ -79,8 +79,8 @@
  *
  */
 XStatus PWM_DETECTION_Reg_SelfTest(void * baseaddr_p);
-uint32t _PWMdet_rd_hcount PWMdet_rd_hcount(void);
-uint32t _PWMdet_rd_lcount PWMdet_rd_hcount(void);
+uint32_t PWMdet_rd_hcount(void);
+uint32_t PWMdet_rd_lcount(void);
 
 
 #endif // PWM_DETECTION_H

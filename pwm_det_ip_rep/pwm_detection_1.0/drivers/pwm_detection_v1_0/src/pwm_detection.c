@@ -19,9 +19,9 @@
 * @note		The Base Address of the NEXYS4IO peripheral will be in xparameters.h
 *
 *****************************************************************************/
-uint32t _PWMdet_rd_hcount PWMdet_rd_hcount(void) {
+uint32_t PWMdet_rd_hcount(void) {
     
-    uinit32_t high_count;
+    uint32_t high_count;
     
 	//read the high count of the PWM detection IP
 	high_count = PWM_DETECTION_mReadReg(XPAR_PWM_DETECTION_0_S00_AXI_BASEADDR, PWM_DET_HCOUNT_REG);
@@ -43,9 +43,9 @@ uint32t _PWMdet_rd_hcount PWMdet_rd_hcount(void) {
 * @note		The Base Address of the NEXYS4IO peripheral will be in xparameters.h
 *
 *****************************************************************************/
-uint32t _PWMdet_rd_lcount PWMdet_rd_hcount(void) {
+uint32_t PWMdet_rd_lcount(void) {
     
-    uinit32_t low_count;
+    uint32_t low_count;
     
 	//read the high count of the PWM detection IP
 	low_count = PWM_DETECTION_mReadReg(XPAR_PWM_DETECTION_0_S00_AXI_BASEADDR, PWM_DET_LCOUNT_REG);

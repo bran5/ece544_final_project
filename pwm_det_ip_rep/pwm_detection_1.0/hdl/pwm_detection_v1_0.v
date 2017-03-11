@@ -48,8 +48,8 @@
 
 // Declare wire interconnect wires
 
-    wire count_high_pwm;
-    wire count_low_pwm;
+    wire [31:0] count_high_pwm;
+    wire [31:0] count_low_pwm;
             
 
 // Instantiation of Axi Bus Interface S00_AXI
