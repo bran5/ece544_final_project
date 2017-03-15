@@ -1,0 +1,78 @@
+18:40:09 INFO  : Launching XSDB server: xsdb.bat -interactive C:\Users\biodrowski\Documents\ECE544\final_project\sdk\temp_xsdb_launch_script.tcl
+18:40:10 INFO  : XSDB server has started successfully.
+18:40:10 INFO  : Processing command line option -hwspec C:/Users/biodrowski/Documents/ECE544/final_project/sdk/n4fpga.hdf.
+18:42:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:42:35 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292747175A" && level==0} -index 0' command is executed.
+18:42:38 INFO  : FPGA configured successfully with bitstream "C:/Users/biodrowski/Documents/ECE544/final_project/sdk/n4fpga_hw_platform_0/download.bit"
+18:42:47 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292747175A" && level==0} -index 0' command is executed.
+18:42:47 INFO  : 'fpga -state' command is executed.
+18:42:47 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:42:47 INFO  : Jtag cable 'Digilent Nexys4DDR 210292747175A' is selected.
+18:42:48 INFO  : 'jtag frequency' command is executed.
+18:42:48 INFO  : Context for processor 'microblaze_0' is selected.
+18:42:48 INFO  : Hardware design information is loaded from 'C:/Users/biodrowski/Documents/ECE544/final_project/sdk/n4fpga_hw_platform_0/system.hdf'.
+18:42:48 INFO  : Context for processor 'microblaze_0' is selected.
+18:42:48 INFO  : Processor reset is completed for 'microblaze_0'.
+18:42:48 INFO  : Context for processor 'microblaze_0' is selected.
+18:42:48 INFO  : The application 'C:/Users/biodrowski/Documents/ECE544/final_project/sdk/ece544_IP_test/Debug/ece544_IP_test.elf' is downloaded to processor 'microblaze_0'.
+18:42:48 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292747175A"} -index 0
+loadhw C:/Users/biodrowski/Documents/ECE544/final_project/sdk/n4fpga_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292747175A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292747175A"} -index 0
+dow C:/Users/biodrowski/Documents/ECE544/final_project/sdk/ece544_IP_test/Debug/ece544_IP_test.elf
+----------------End of Script----------------
+
+18:42:48 INFO  : Memory regions updated for context MicroBlaze #0
+18:42:48 INFO  : Context for processor 'microblaze_0' is selected.
+18:42:48 INFO  : 'con' command is executed.
+18:42:48 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292747175A"} -index 0
+con
+----------------End of Script----------------
+
+18:42:48 INFO  : Launch script is exported to file 'C:\Users\biodrowski\Documents\ECE544\final_project\sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_on_local_ece544_ip_test.elf.tcl'
+18:43:53 INFO  : Disconnected from the channel tcfchan#1.
+18:43:53 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292747175A" && level==0} -index 0' command is executed.
+18:43:53 INFO  : 'fpga -state' command is executed.
+18:43:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:43:53 INFO  : Jtag cable 'Digilent Nexys4DDR 210292747175A' is selected.
+18:43:53 INFO  : 'jtag frequency' command is executed.
+18:43:53 INFO  : Context for processor 'microblaze_0' is selected.
+18:43:53 INFO  : Hardware design information is loaded from 'C:/Users/biodrowski/Documents/ECE544/final_project/sdk/n4fpga_hw_platform_0/system.hdf'.
+18:43:53 INFO  : Context for processor 'microblaze_0' is selected.
+18:43:53 INFO  : Processor reset is completed for 'microblaze_0'.
+18:43:53 INFO  : Context for processor 'microblaze_0' is selected.
+18:43:54 INFO  : The application 'C:/Users/biodrowski/Documents/ECE544/final_project/sdk/ece544_IP_test/Debug/ece544_IP_test.elf' is downloaded to processor 'microblaze_0'.
+18:43:54 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292747175A"} -index 0
+loadhw C:/Users/biodrowski/Documents/ECE544/final_project/sdk/n4fpga_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292747175A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292747175A"} -index 0
+dow C:/Users/biodrowski/Documents/ECE544/final_project/sdk/ece544_IP_test/Debug/ece544_IP_test.elf
+----------------End of Script----------------
+
+18:43:54 INFO  : Memory regions updated for context MicroBlaze #0
+18:43:54 INFO  : Context for processor 'microblaze_0' is selected.
+18:43:54 INFO  : 'con' command is executed.
+18:43:54 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292747175A"} -index 0
+con
+----------------End of Script----------------
+
+18:43:54 INFO  : Launch script is exported to file 'C:\Users\biodrowski\Documents\ECE544\final_project\sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_on_local_ece544_ip_test.elf.tcl'
+18:46:07 ERROR : xsdb server communication channel has closed unexpectedly.
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:209)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:284)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:345)
+	at java.io.FilterInputStream.read(FilterInputStream.java:107)
+	at org.eclipse.tcf.core.ChannelTCP.get(ChannelTCP.java:162)
+	at org.eclipse.tcf.core.StreamChannel.read(StreamChannel.java:84)
+	at org.eclipse.tcf.core.AbstractChannel$1.run(AbstractChannel.java:254)
+18:54:36 INFO  : Disconnected from the channel tcfchan#2.
